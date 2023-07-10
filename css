@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.room {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.candle {
+  width: 60px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg);
+}
+.candle1{
+    width: 65px;
+  height: 100px;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+}
+.candle2
+{
+    width: 68px;
+  height: 50px;
+  background-color: white;
+  border-radius: 70px;
+  position: relative;
+}
+
+.flame {
+  width: 20px;
+  height: 80px;
+  background-color: #ff9933;
+  position: absolute;
+  bottom: 100%;
+  left:33%;
+  border-radius: 50% 50% 0 0;
+  animation: flicker 3s infinite;
+  box-shadow: 0 0 500px 50px #ff9933;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg);
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    background-olor: #ff0000     ;
+  }
+  10% {
+      background-color:      #ff5a00         ;
+  }
+  20%{
+      background-color:#ff0000          ;
+  }
+  30%{
+      background-color:     #ff5a00          ;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: #ff0000          ;
+  }
+  60% {
+      background-color:     #ff5a00;
+  }
+  70%{
+      background-color:#ff0000          ;
+  }
+  80%{
+      background-color:     #ff5a00          ;
+  }
+  90% {
+    background-color:      #ff5a00          ;
+  }
+  100% {
+    opacity: 1;
+    background-color:#ff0000     ;
+    
+  }
+}
+
+
+keyframes fade {
+      from {
+        color:white;
+      }
+      to {
+        color:black;
+      }
+    }
+    
+    footer p {
+      animation: fade 2s ease-in-out infinite alternate;
+      font-size:11px;
+      color:white;
+      text-align:center;
+      font-family:Times New Roman;
+      background-color:black;
+      
+    }
